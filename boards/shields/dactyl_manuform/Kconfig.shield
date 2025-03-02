@@ -1,0 +1,7 @@
+# No whitespace after the comma or in your part name!
+config SHIELD_DACTYL_MANUFORM_LEFT
+    def_bool $(shields_list_contains,dactyl_manuform_left)
+
+# No whitespace after the comma or in your part name!
+config SHIELD_DACTYL_MANUFORM_RIGHT
+    def_bool $(shields_list_contains,dactyl_manuform_right)
