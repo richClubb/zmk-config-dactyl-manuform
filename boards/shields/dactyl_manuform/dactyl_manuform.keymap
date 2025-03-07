@@ -8,6 +8,7 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
+#define DEF 0
 #define SYM 1
 #define FUN 2
 #define NAV 3
@@ -27,7 +28,7 @@
 			bindings = <
 				&kp TAB       &kp W  &kp L      &kp R     &kp B     &kp Z                                                      &kp SEMI &kp Q     &kp U      &kp D     &kp J     &kp BSLH
 				&mt LCTRL ESC &kp S  &kp H      &kp N     &kp T     &kp COMMA                                                  &kp DOT  &kp A     &kp E      &kp O     &kp I     &mt RCTL SQT
-				&kp LSHFT     &kp F  &kp M      &kp V     &kp C     &kp FLSH                                                   &kp G    &kp P     &kp X      &kp K     &kp Y     &kp RSHIFT
+				&kp LSHFT     &kp F  &kp M      &kp V     &kp C     &kp FLSH                                                   &kp G    &kp P     &kp X      &kp K     &kp Y     &kp RSHFT
 							         &kp LALT   &kp LWIN  &kp BSPC  &kp SPACE  &kp LBKT  &kp CAPS         &kp LSHFT  &kp RBKT  &kp RET  &kp RALT  &kp RWIN   &kp K_APP
 														     			 	   &mo NAV   &mo FUN          &kp TAB    &mo SYM   
 			>;
@@ -88,4 +89,49 @@
 		};
 
 	};
+
+    combos {
+        compatible = "zmk,combos";
+        combo_pgup {
+            timeout-ms = <50>;
+            key-positions = <7 8>; 
+            bindings = <&kp PG_UP>;
+            layer = DEF;
+        };
+
+        combo_pgdn {
+            timeout-ms = <50>;
+            key-positions = <19 20>;
+            bindings = <&kp PG_DN>;
+            layer = DEF;
+        };
+
+        combo_home {
+            timeout-ms = <50>;
+            key-positions = <8 9>;
+            bindings = <&kp HOME>;
+            layer = DEF;
+        };
+
+        combo_end {
+            timeout-ms = <50>;
+            key-positions = <20 21>;
+            bindings = <&kp END>;
+            layer = DEF;
+        };
+
+        combo_vdl {
+            timeout-ms = <50>;
+            key-positions = <9 10>;
+            bindings = <&kp LC(LS(LEFT))>;
+            layer = DEF;
+        };
+
+        combo_vdr {
+            timeout-ms = <50>;
+            key-positions = <21 12>;
+            bindings = <&kp LC(LS(RIGHT))>;
+            layer = DEF;
+        };
+    };
 };
