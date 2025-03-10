@@ -25,10 +25,10 @@
 			//                                           | MO 3  |  MO 2   |  |   RET   |  SPACE  |
 			label = "Def";
 			bindings = <
-				&kp TAB       &kp Q  &kp W      &kp E     &kp R     &kp T                                                      &kp Y    &kp U     &kp I      &kp O     &kp P     &kp BSLH
-				&mt LCTRL ESC &kp A  &kp S      &kp D     &kp F     &kp G                                                      &kp H    &kp J     &kp K      &kp L     &kp SEMI  &mt RCTL SQT
-				&kp LSHFT     &kp Z  &kp X      &kp C     &kp V     &kp B                                                      &kp N    &kp M     &kp COMMA  &kp DOT   &kp FSLH  &kp RSHIFT
-							         &kp LALT   &kp LWIN  &kp BSPC  &kp SPACE  &kp LBKT  &kp CAPS         &kp LSHFT  &kp RBKT  &kp RET  &kp RALT  &kp BSPC   &kp RALT
+				&kp TAB       &kp W  &kp L      &kp R     &kp B     &kp Z                                                      &kp SEMI &kp Q     &kp U      &kp D     &kp J     &kp BSLH
+				&mt LCTRL ESC &kp S  &kp H      &kp N     &kp T     &kp COMMA                                                  &kp DOT  &kp A     &kp E      &kp O     &kp I     &mt RCTL SQT
+				&kp LSHFT     &kp F  &kp M      &kp V     &kp C     &kp FSLH                                                   &kp G    &kp P     &kp X      &kp K     &kp Y     &kp RSHIFT
+							         &kp LALT   &kp LWIN  &kp BSPC  &kp SPACE  &kp LBKT  &kp CAPS         &kp FUN    &kp RBKT  &kp RET  &kp RALT  &kp RWIN   &kp K_APP
 														     			 	   &mo NAV   &mo FUN          &kp TAB    &mo SYM   
 			>;
 		};
